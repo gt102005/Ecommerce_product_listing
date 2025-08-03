@@ -1,0 +1,30 @@
+/* src/components/Header.css */
+
+.header {
+  background-color: #1976d2; /* MUI primary */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-button:hover {
+  transform: scale(1.1);
+}
