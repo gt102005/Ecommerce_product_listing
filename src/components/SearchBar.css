@@ -1,0 +1,110 @@
+.search-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.search-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-input {
+  background: white;
+  border-radius: 8px !important;
+}
+
+.search-input .MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input .MuiOutlinedInput-root:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.search-input .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 4px 20px rgba(25, 118, 210, 0.2);
+  border-color: #1976d2;
+}
+
+.search-input .MuiOutlinedInput-input {
+  padding: 14px 16px !important;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-input .MuiOutlinedInput-input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.search-icon {
+  color: #1976d2 !important;
+  font-size: 1.2rem !important;
+}
+
+.clear-button {
+  color: #666 !important;
+  padding: 4px !important;
+}
+
+.clear-button:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  color: #333 !important;
+}
+
+.search-status {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-chip {
+  background: white !important;
+  border-color: #1976d2 !important;
+  color: #1976d2 !important;
+  font-weight: 500 !important;
+}
+
+.search-chip .MuiChip-deleteIcon {
+  color: #1976d2 !important;
+}
+
+.search-chip .MuiChip-deleteIcon:hover {
+  color: #1565c0 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .search-input .MuiOutlinedInput-input {
+    padding: 12px 16px !important;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-wrapper {
+    padding: 0 0.5rem;
+  }
+  
+  .search-input .MuiOutlinedInput-input {
+    padding: 10px 12px !important;
+    font-size: 0.9rem;
+  }
+  
+  .search-status {
+    padding: 0 0.5rem;
+  }
+}
